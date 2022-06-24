@@ -1,0 +1,38 @@
+User Requirement:
+To display software code project of the research lab in the website
+
+URL For reference:
+Handlebar documentation - https://handlebarsjs.com , https://github.com/elving/swag
+
+For modifying html and style of the component
+Html & CSS template - ./layouts/partials/widgets/code.html
+
+To manipulate the Javascript function
+JS Function File -  ./layouts/partials/widgets/code.html
+
+JS handlebar template page - ./static/files/code-template.js
+
+To add new code to the website
+JSON Files - ./static/files/code.json
+
+Go to the above file location. There will be a array of JSON. Add the required data to the top of the array to be displayed on the code page.
+
+JSON STRUCTURE Example
+
+[
+    {
+    "title": "Software Refactoring", -> This is the main header which is in the blue container
+    "data": -> adding to this array to add one card to the parent container of the above title
+    [{
+            "title": "Self Affirmed Refactoring", -> title
+            "description": "Zilicio, an automation framework that allows inexperienced and experienced developers ", -> description
+            "imageURL": "https://smilevo.github.io/self-affirmed-refactoring/Images/SAR.PNG", -> main card image url has to be mentioned
+            "url": "https://www.google.com", -> URL of the project. This makes the whole card clickable and click action will take user to the teaching page
+            "author": 
+            [{
+                    "name": "Mohamed Wiem Mkaouer", -> author name
+                    "image": "/author/mohamed-wiem-mkaouer/avatar_hu6ff10dbe48222c87eaa06aa61a713322_27020_270x270_fill_q75_lanczos_center.jpg", -> author image
+                    "url": "/author/mohamed-wiem-mkaouer/" -> author website url
+            }]
+        }]
+    }]

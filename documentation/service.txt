@@ -1,0 +1,25 @@
+User Requirement:
+To display professor service in the website
+
+URL For reference:
+Handlebar documentation - https://handlebarsjs.com , https://github.com/elving/swag
+
+For modifying html and style of the component
+Html & CSS template - ./layouts/partials/widgets/service.html
+
+To manipulate the Javascript function
+JS Function File -  ./layouts/partials/widgets/service.html
+
+JS handlebar template page - ./static/files/service-template.js
+
+To add new code to the website
+JSON Files - ./static/files/service.json
+
+Go to the above file location. There will be a array of JSON. Add the required data to the top of the array to be displayed on the service page.
+
+JSON STRUCTURE Example
+
+[{
+    "Date": "04-April-2022", -> Date of the service
+    "Content":"Curious about what we do for Trustworthy AI? Check out my interview (in french) in Polytechnique Magazine" - description of the service
+}]

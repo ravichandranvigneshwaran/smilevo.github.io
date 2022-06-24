@@ -1,0 +1,16 @@
+User Requirement:
+To display all the FB feed in the newFeed URL. There are multiple ask from the professor to use Pagination and display only 10 elements in the website. Use FB feed SDK library.
+
+URL For reference:
+FB SDK - https://developers.facebook.com/docs/javascript/
+
+For modifying html and style of the component
+Html & CSS template - ./layouts/partials/widgets/newsfeed.html
+
+To manipulate the Javascript function
+JS Function File -  ./layouts/partials/widgets/newsfeed.html
+
+To add new newsfeed to the website
+JSON Files - ./static/files/fbFeed.json
+
+Go to the above file location. There will be a array of JSON. Add the URL to the top of the array to be displayed on the newsfeed. It also affects the feed in the homepage news Carousel.
